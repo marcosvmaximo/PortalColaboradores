@@ -1,0 +1,12 @@
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/bin/Debug/net8.0/PortalColaboradores.Core.deps.json
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/bin/Debug/net8.0/PortalColaboradores.Core.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/bin/Debug/net8.0/PortalColaboradores.Core.pdb
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.csproj.AssemblyReference.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.AssemblyInfoInputs.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.AssemblyInfo.cs
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.csproj.CoreCompileInputs.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/refint/PortalColaboradores.Core.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.pdb
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/ref/PortalColaboradores.Core.dll

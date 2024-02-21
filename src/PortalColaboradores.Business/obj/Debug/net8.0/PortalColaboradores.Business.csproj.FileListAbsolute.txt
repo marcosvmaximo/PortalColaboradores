@@ -1,0 +1,15 @@
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/bin/Debug/net8.0/PortalColaboradores.Business.deps.json
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/bin/Debug/net8.0/PortalColaboradores.Business.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/bin/Debug/net8.0/PortalColaboradores.Business.pdb
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/bin/Debug/net8.0/PortalColaboradores.Core.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/bin/Debug/net8.0/PortalColaboradores.Core.pdb
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.csproj.AssemblyReference.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.AssemblyInfoInputs.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.AssemblyInfo.cs
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.csproj.CoreCompileInputs.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.csproj.CopyComplete
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/refint/PortalColaboradores.Business.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.pdb
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/ref/PortalColaboradores.Business.dll
