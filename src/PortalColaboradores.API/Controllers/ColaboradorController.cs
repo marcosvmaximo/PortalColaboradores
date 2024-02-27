@@ -9,7 +9,7 @@ using PortalColaboradores.Infra.ExternalService.Interfaces;
 
 namespace PortalColaboradores.API.Controllers;
 
-[Route("api/v1/[controller]")]
+[Route("api/v1/colaboradores")]
 // [Authorize]
 public class ColaboradorController : BaseController
 {
@@ -41,6 +41,7 @@ public class ColaboradorController : BaseController
         return await CustomResponse(colaboradores);
     }
     
+    // Boas praticas diria para o identificador de busca de um colaborador não fosse o ID do banco, e sim alguma outra chave única
     [HttpGet("{id:int}")]
     public async Task<ActionResult> ObterColaboradorPorId([FromRoute]int id)
     {
@@ -130,7 +131,7 @@ public class ColaboradorController : BaseController
     }
 
     [HttpGet("endereco/{cep}")]
-    public async Task<ActionResult<EnderecoDto>> VeriricarCep([FromRoute]string cep)
+    public async Task<ActionResult<EnderecoDto>> BuscarCep([FromRoute]string cep)
     {
         var result = await _cepService.Buscar(cep);
         

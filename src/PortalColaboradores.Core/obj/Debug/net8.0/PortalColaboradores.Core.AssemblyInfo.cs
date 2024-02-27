@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalColaboradores.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7992fb0071bb2c1b705147e7492b13441d02d70")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalColaboradores.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalColaboradores.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

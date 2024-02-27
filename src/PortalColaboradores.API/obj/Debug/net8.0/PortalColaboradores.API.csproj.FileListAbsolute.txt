@@ -85,3 +85,4 @@
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.API/obj/Debug/net8.0/PortalColaboradores.API.pdb
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.API/obj/Debug/net8.0/PortalColaboradores.API.genruntimeconfig.cache
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.API/obj/Debug/net8.0/ref/PortalColaboradores.API.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.API/obj/Debug/net8.0/PortalColaboradores.API.sourcelink.json

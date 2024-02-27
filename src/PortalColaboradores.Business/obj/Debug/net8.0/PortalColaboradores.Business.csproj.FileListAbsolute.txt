@@ -13,3 +13,4 @@
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/refint/PortalColaboradores.Business.dll
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.pdb
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/ref/PortalColaboradores.Business.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Business/obj/Debug/net8.0/PortalColaboradores.Business.sourcelink.json

@@ -17,3 +17,4 @@
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Infra/obj/Debug/net8.0/ref/PortalColaboradores.Infra.dll
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Infra/bin/Debug/net8.0/PortalColaboradores.Infra.runtimeconfig.json
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Infra/obj/Debug/net8.0/PortalColaboradores.Infra.genruntimeconfig.cache
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Infra/obj/Debug/net8.0/PortalColaboradores.Infra.sourcelink.json

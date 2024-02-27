@@ -10,3 +10,4 @@
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/refint/PortalColaboradores.Core.dll
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.pdb
 /Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/ref/PortalColaboradores.Core.dll
+/Users/marcosmaximo/RiderProjects/PortalColaboradores/src/PortalColaboradores.Core/obj/Debug/net8.0/PortalColaboradores.Core.sourcelink.json

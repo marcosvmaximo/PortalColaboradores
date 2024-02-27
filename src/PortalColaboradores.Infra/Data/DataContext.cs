@@ -22,7 +22,6 @@ public class DataContext : DbContext, IUnityOfWork
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<PessoaFisica>().ToTable("PessoasFisicas");
         modelBuilder.Entity<Colaborador>().ToTable("Colaboradores");
         
