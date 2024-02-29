@@ -1,0 +1,127 @@
+
+<div class="container">
+    <div class="row justify-content-center align-items-center v-100 mt-5 py-5">
+        <div class="col-md-7">
+            <form [formGroup]="formEditarColaborador" class="d-flex flex-column gap-5">
+                <fieldset>
+                    <legend>Dados Colaborador</legend>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="matricula" class="form-label">Matrícula *</label>
+                            <input type="text" formControlName="matricula" class="form-control" id="matricula">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="nameInput" class="form-label">Nome *</label>
+                            <input type="text" formControlName="nome" class="form-control" id="nameInput">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="cpfInput" class="form-label">CPF *</label>
+                            <input type="text" formControlName="cpf" class="form-control" id="cpfInput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="birthInput" class="form-label">Data de Nascimento *</label>
+                            <input type="date" formControlName="dataNascimento" class="form-control" id="birthInput">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="rgInput" class="form-label">RG *</label>
+                            <input type="text" formControlName="rg" class="form-control" id="rgInput">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="valueInput" class="form-label">Valor Contribuição</label>
+                            <input type="number" formControlName="valorContribuicao" class="form-control" id="valueInput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-7">
+                            <label for="tipoSelect" class="form-label">Tipo Colaborador *</label>
+                            <select id="tipoSelect" formControlName="tipo" class="form-select">
+                                <option value="1">Efetivo</option>
+                                <option value="2">Estagiário</option>
+                                <option value="3">Terceirizado</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="admissionInput" class="form-label">Data de Admissão</label>
+                            <input type="date"  formControlName="dataAdmissao" class="form-control" id="admissionInput">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="d-flex">
+                        <legend>Endereços</legend>
+                        <button type="button" (click)="adicionarEndereco()" class="btn btn-primary">Adicionar</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">CEP</th>
+                            <th scope="col">Logradouro</th>
+                            <th scope="col">Número</th>
+                            <th scope="col">Bairro</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Tipo</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr *ngFor="let endereco of enderecos">
+                            <td>{{ endereco.cep }}</td>
+                            <td>{{ endereco.logradouro }}</td>
+                            <td>{{ endereco.numeroComplemento }}</td>
+                            <td>{{ endereco.bairro }}</td>
+                            <td>{{ endereco.cidade }}</td>
+                            <td>{{ ETipoEndereco[parseInt(endereco.tipo)] }}</td>
+                            <td>
+                                <div class="d-flex justify-content-end">
+                                    <button (click)="apagarEndereco(endereco)" class="delete-btn p-2 px-3">
+                                        <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                            <path d="M2 30 L30 2 M30 30 L2 2" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <div class="d-flex">
+                        <legend>Telefones</legend>
+                        <button type="button" (click)="adicionarTelefone()" class="btn btn-primary">Adicionar</button>
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Número</th>
+                            <th scope="col">Tipo</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr *ngFor="let telefone of telefones">
+                                <td>{{ telefone.numero }}</td>
+                                <td>{{ ETipoTelefone[parseInt(telefone.tipo)] }}</td>
+                                <td>
+                                    <div class="d-flex justify-content-end">
+                                        <button (click)="apagarTelefone()" class="delete-btn p-2 px-3">
+                                            <svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M2 30 L30 2 M30 30 L2 2" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <div *ngIf="errors.length > 0" class="alert alert-danger" role="alert">
+                    Ocorreu um erro ao processar sua solicitação.
+                    <ul class="m-0 mt-3" style="padding-left: 15px">
+                        <li *ngFor="let error of errors">{{error.value}}</li>
+                    </ul>
+                </div>
+                <button type="submit" (click)="editarColaborador()" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-4">
+            <form [formGroup]="formRegister" class="row">
+                <div class="mb-3">
+                    <label for="login" class="form-label">Nome de Usuário: </label>
+                    <input type="text" formControlName="login" class="form-control" id="login">
+                </div>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" formControlName="nome" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha: </label>
+                    <input type="password" formControlName="senha" class="form-control" id="senha">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmarSenha" class="form-label">ConfirmarSenha: </label>
+                    <input type="password" formControlName="confirmarSenha" class="form-control" id="confirmarSenha">
+                </div>
+
+                <div *ngIf="errors.length > 0" class="alert alert-danger" role="alert">
+                    Ocorreu um erro ao processar sua solicitação.
+                    <ul class="m-0 mt-3" style="padding-left: 15px">
+                        <li *ngFor="let error of errors">{{error.value}}</li>
+                    </ul>
+                </div>
+                <button type="submit" (click)="register()" class="btn btn-primary mt-3 text-center">Registrar</button>
+            </form>
+        </div>
+    </div>
+</div>

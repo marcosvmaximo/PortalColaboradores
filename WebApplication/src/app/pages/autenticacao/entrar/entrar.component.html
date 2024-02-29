@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-4">
+            <form [formGroup]="formLogin" class="row">
+                <div class="mb-3">
+                    <label for="login" class="form-label">Nome de Usuário</label>
+                    <input type="text" formControlName="login" class="form-control" id="login" aria-describedby="loginHelp">
+                    <div id="loginHelp" class="form-text">Digite o nome de usuário.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" formControlName="senha" class="form-control" id="senha">
+                </div>
+                <div *ngIf="errors.length > 0" class="alert alert-danger" role="alert">
+                    Ocorreu um erro ao processar sua solicitação.
+                    <ul class="m-0 mt-3" style="padding-left: 15px">
+                        <li *ngFor="let error of errors">{{error.value}}</li>
+                    </ul>
+                </div>
+                <button type="submit" (click)="logar()" class="btn btn-primary">Entrar</button>
+            </form>
+        </div>
+    </div>
+</div>

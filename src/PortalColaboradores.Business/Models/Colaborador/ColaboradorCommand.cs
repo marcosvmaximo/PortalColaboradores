@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using PortalColaboradores.Business.Enum;
 using PortalColaboradores.Business.Validations;
 
@@ -16,7 +17,7 @@ public class ColaboradorCommand
 
     [Required(ErrorMessage = "O campo CPF é obrigatório.")]
     [RegularExpression(@"^\d{11}$", ErrorMessage = "O campo CPF deve conter exatamente 11 dígitos.")]
-    [Cpf]
+    // [Cpf]
     public string Cpf { get; set; }
 
     [Required(ErrorMessage = "O campo RG é obrigatório.")]
@@ -36,4 +37,8 @@ public class ColaboradorCommand
 
     [Range(0.01, 9999.99, ErrorMessage = "O campo Valor de Contribuição deve ser maior ou igual a R$0,01 e menor que R$10.000,00.")]
     public decimal? ValorContribuicao { get; set; }
+    [JsonIgnore]
+    public IList<EnderecoDto> Enderecos { get; set; }
+    [JsonIgnore]
+    public IList<TelefoneDto> Telefones { get; set; }
 }

@@ -1,0 +1,52 @@
+
+<div class="container">
+    <div class="row justify-content-center align-items-center v-100 mt-5 py-5">
+        <div class="col-md-7">
+            <form [formGroup]="formEndereco" class="d-flex flex-column gap-5">
+                <fieldset>
+                    <legend>Cadastrar Endereço ao Colaborador</legend>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="cep" class="form-label">CEP *</label>
+                            <input type="text" formControlName="cep" class="form-control" id="cep">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="logradouro" class="form-label">Logradouro *</label>
+                            <input type="text" formControlName="logradouro" class="form-control" id="logradouro">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="numero" class="form-label">Número *</label>
+                            <input type="number" formControlName="numero" class="form-control" id="numero">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="bairro" class="form-label">Bairro *</label>
+                            <input type="text" formControlName="bairro" class="form-control" id="bairro">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="cidade" class="form-label">Cidade *</label>
+                            <input type="text" formControlName="cidade" class="form-control" id="cidade">
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="tipoSelect" class="form-label">Tipo Endereço *</label>
+                            <select id="tipoSelect" formControlName="tipo" class="form-select">
+                                <option value="1">Residêncial</option>
+                                <option value="2">Comercial</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div *ngIf="errors.length > 0" class="alert alert-danger" role="alert">
+                    Ocorreu um erro ao processar sua solicitação.
+                    <ul class="m-0 mt-3" style="padding-left: 15px">
+                        <li *ngFor="let error of errors">{{error.value}}</li>
+                    </ul>
+                </div>
+                <button type="submit" (click)="cadastrarEndereco()" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

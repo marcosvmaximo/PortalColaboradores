@@ -44,6 +44,11 @@ public class CpfAttribute : ValidationAttribute
 {
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
+        if (value == null || string.IsNullOrWhiteSpace(value.ToString()))
+        {
+            return new ValidationResult("CPF nulo ou vázio");
+        }
+        
         string cpf = value.ToString().Replace(".", "").Replace("-", ""); // Remove caracteres de formatação
 
         if (cpf.Length != 11 || !ValidadorCPF.ValidarCPF(cpf))

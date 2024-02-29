@@ -10,7 +10,7 @@ using PortalColaboradores.Infra.ExternalService.Interfaces;
 namespace PortalColaboradores.API.Controllers;
 
 [Route("api/v1/colaboradores")]
-// [Authorize]
+[Authorize]
 public class ColaboradorController : BaseController
 {
     private readonly IColaboradorRepository _repository;

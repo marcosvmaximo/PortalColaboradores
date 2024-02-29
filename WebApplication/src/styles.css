@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.edit-btn,
+.delete-btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn{
+    background-color: #007bff;
+}
+.delete-btn{
+    background-color: #e82030;
+}
+
+.edit-btn:hover{
+    background-color: #0056b3;
+}
+
+.delete-btn:hover{
+    background-color: #d01323;
+}
